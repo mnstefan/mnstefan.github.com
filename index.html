@@ -12,26 +12,61 @@
 		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
 		<link rel="shortcut icon" href="/favicon.ico" />
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<link rel="stylesheet/less" type="text/css" href="less/style.less"/>
+		
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="jquery.backstretch.min.js"></script>
+		<script type="text/javascript" src="less/less-1.3.0.min.js"></script>
 	</head>
 	<body>
 		<div>
-			<header>
-				<h1>mnstefan aka Stefan Manastirliu</h1>
-			</header>
-			<nav>
-				<p>
-					<a href="/">Home</a>
-				</p>
-				<p>
-					<a href="/contact">Contact</a>
-				</p>
-			</nav>
-			<div></div>
-			<footer>
-				<p>
-					&copy; Copyright  by Stefan Manastirliu
-				</p>
-			</footer>
+			<div class="container main-container">
+				<div class="row">
+					<div class="span6 content">
+						<header>
+							<h1>mnstefan <small>aka Stefan Manastirliu</small></h1>
+						</header>
+						
+						
+						<h2>Hello there</h2>
+						
+						<p>
+							I was bord in Durres, Albania in 1988. I moved to Italy in 1999, currently i'm based in Bologna, an amazing city!'
+							<br/>
+						</p>
+						<p>
+							I'm a web developer and UX designer. 
+							Currently I work @ <a href="http://koinema.com" title="Koinema web">Koinema</a> and I'm founder and CEO @ <a href="http://onflare.com" title="OnFlare web">OnFlare</a>.
+							<br/>
+						</p>
+						
+						<h5>Projects:</h5>
+						<ul>
+							<li>
+								<a href="http://le-muse.com">Le Muse</a> / Create inspiring photo colllections
+							</li>
+						</ul>
+						
+						<h5>Github:</h5>
+						<ul>
+							<li>
+								<a href="http://mnstefan.github.com/YesNo/">Yes/No</a> / A basic jQuery plugin that replaces a checkbox input with a "yes/no" switch
+							</li>
+						</ul>
+						
+						
+						<footer>
+							<p>
+								Follow and contacts: <a href="http://twitter.com/#!/mnstefan">@mnstefan</a><br/>
+								<a href="http://it.linkedin.com/in/stefanmanastirliu">Resume at linkedIn</a>
+							</p>
+						</footer>
+					</div>
+				</div>
+			</div>
 		</div>
+		<script>
+	    	$.backstretch("durres.jpg");
+    	</script>
 	</body>
 </html>
