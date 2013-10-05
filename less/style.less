@@ -1,31 +1,22 @@
-@import "bootstrap/less/bootstrap.less";
+@import "bootstrap-3.0.0/less/bootstrap.less";
 
-.main-container{
-  margin: 40px 0;
-  color: @white;
-  font-size:15px;
-  
-  small{
-    color:@white;
-    .opacity(70);
+body{
+  background: url("../includes/img/patterns/brushed.png");
+
+  .section{
+    margin-bottom: 4em;
+
+    .thumb-item{
+      margin-bottom: 2em;
+      height: 400px;
+    }
   }
-  
-  .content{
-      #translucent > .background(@pink, .8);
-      padding: 20px;
-  }
-  p{
-    
-    margin-bottom:20px;
-  }
-  
-  footer{
-    font-size:13px;
-    .opacity(70);
-    margin-top:30px;
-  }
-  
-  header{
-    margin-bottom:30px;
-  }
+}
+
+header{
+  margin-bottom: 2em;
+}
+
+.picture img{
+  max-width: 100%;
 }
