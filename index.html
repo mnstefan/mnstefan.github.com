@@ -12,153 +12,206 @@
 		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
 		<link rel="shortcut icon" href="/favicon.ico" />
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet/less" type="text/css" href="less/style.less"/>
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 		<script type="text/javascript" src="includes/vendor/less-1.4.1.min.js"></script>
-		
+		<script type="text/javascript" src="less/bootstrap-3.0.0/js/affix.js"></script>
+		<script type="text/javascript" src="less/bootstrap-3.0.0/js/scrollspy.js"></script>
+
 	</head>
-	<body>
+	<body data-spy="scroll" data-target="#sidebar-nav">
 		<div class="container">
 			<header>
-				<h2>Stefan Manastirliu</h2>
-				<h1>UX Designer & Developer</h1>
+			<div class="row">
+				<div class="col-md-offset-3 col-md-9">
+					<h2>Stefan Manastirliu</h2>
+					<h1>UX Designer & Frontend Engineer</h1>
+				</div>
+			</div>
 			</header>
 			<div class="row">
-				<div class="col-md-4">
-					<div class="sidebar hidden-print affix">
-						<ul class="nav">
-							<li><a href="#about" title="">About</a></li>
-							<li><a href="#active-projects" title="">Active Projects</a></li>
-							<!--<li><a href="" title="">Experiments</a></li>-->
-							<li><a href="#portfolio" title="">Portfolio</a></li>
-							<!--<li><a href="" title="">Curriculum</a></li>-->
-						</ul>
+				<div class="col-md-3">
+					<div class="sidebar hidden-print affix" data-spy="affix" data-offset-top="190">
+						<nav id="sidebar-nav">
+							<ul class="nav">
+								<li><a href="#about" title="">About</a></li>
+								<li><a href="#active-projects" title="">Active Projects</a></li>
+								<li><a href="#portfolio" title="">Portfolio</a></li>
+								<li><a href="#skillset" title="">Skillset</a></li>
+								<li><a href="#cv" title="">CV and Contacts</a></li>
+							</ul>
+						</nav>
 					</div>
 				</div>
-				<div class="col-md-8">
-					<div class="about section">
-						<a name="about"></a>
-						<h2>About</h2>
-						<p>
-							I'm an experienced <a href="http://www.helloerik.com/ux-is-not-ui" title="What UX is" target="_blank">UX Designer</a> and Web Developer. Founder of <a href="http://www.musepeak.com" title="Musepeak homepage" target="_blank">Musepeak</a>. <br/>
-							I strongly believe that a good user experience is critical for any website to be successful.<br/>
-							I'm available for <a href="mailto:mnstefan@gmail.com" title="send me an email">hiring</a>.
-						</p>
-					</div>
-					<div class="active-projects section">
-						<a name="active-projects"></a>
-						<h2>Active Projects</h2>
-						<div class="row">
-							<div class="col-sm-12 col-md-12 col-lg-6 thumb-item">
-								<a href="http://www.musepeak.com"  title="Musepeak Homepage" class="thumbnail picture">
-								    <img src="includes/img/screens/musepeak.png" alt="Musepeak screenshot" />
-								</a>
-								<div class="caption">
-							        <h3>Musepeak</h3>
-							        <p>
-							        	Web application to better manage the creative process between internal team and client.<br/>
-							        	<a href="http://www.musepeak.com" target="blank">www.musepeak.com</a>
-							        </p>							       
-							    </div>
-							</div>
-							<div class="col-sm-12 col-md-12 col-lg-6 thumb-item">
-							    <a href="http://www.lovinitaly.com"  title="lovinitaly Homepage" class="thumbnail picture">
-							      <img src="includes/img/screens/lovinitaly.png" alt="lovinitaly screenshot"/>
-							    </a>
-							    <div class="caption">
-							        <h3>lovinitaly</h3>
-							        <p>
-							        	Sensorial guide to the best of Italy.<br/>
-							        	<a href="http://www.lovinitaly.com" target="blank">www.lovinitaly.com</a>
-							        </p>							      
-							    </div>								
+				<div class="col-md-9">
+					<div role="main">
+						<div class="about section">
+							<a name="about"></a>
+							<h2 id="about">About</h2>
+							<div class="clearfix"></div>
+							<p>
+								<h4>Hi! I'm Stefan and I'm 25.</h4>
+								I'm an experienced <a href="http://www.helloerik.com/ux-is-not-ui" title="What UX is" target="_blank">UX Designer</a> and Frontend Engineer. Founder of <a href="http://www.musepeak.com" title="Musepeak homepage" target="_blank">Musepeak</a>. <br/>
+								I trurly believe that a good user experience is critical for any website to be successful.<br/>
+								I have a strong background in both Design and Engineering: I act as a bridge between these two fields to make a whole team focus on the user behavoir and the website interface.<br/>
+								I'm available for <a href="mailto:mnstefan@gmail.com" title="send me an email">hiring</a>.
+							</p>
+						</div>
+						<div class="active-projects section">
+							<a name="active-projects"></a>
+							<h2 id="active-projects">Active Projects</h2>
+							<div class="clearfix"></div>
+							<div class="row">
+								<div class="col-sm-12 col-md-12 col-lg-6 box">
+									<h4>Musepeak</h4>
+									<a href="http://www.musepeak.com"  title="Musepeak Homepage" class="picture">
+									    <img src="includes/img/screens/musepeak.png" alt="Musepeak screenshot" />
+									</a>
+									<div class="caption">
+								        <p>
+								        	Web application to better manage the creative process between internal team and client.<br/>
+								        	<a href="http://www.musepeak.com" target="blank">www.musepeak.com</a>
+								        </p>							       
+								    </div>
+								</div>
+								<div class="col-sm-12 col-md-12 col-lg-6 box">
+									<h4>lovinitaly</h4>
+								    <a href="http://www.lovinitaly.com"  title="lovinitaly Homepage" class="picture">
+								      <img src="includes/img/screens/lovinitaly.png" alt="lovinitaly screenshot"/>
+								    </a>
+								    <div class="caption">
+								        <p>
+								        	Sensorial guide to the best of Italy.<br/>
+								        	<a href="http://www.lovinitaly.com" target="blank">www.lovinitaly.com</a>
+								        </p>							      
+								    </div>								
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="portfolio section">
-						<a name="portfolio"></a>
-						<h2>Portfolio</h2>
-						<div class="row">
-							<div class="col-sm-12 col-md-12 col-lg-6 thumb-item">
-								<a href="http://www.meliconi.com"  title="Meliconi Homepage" class="thumbnail picture">
-								    <img src="includes/img/screens/meliconi.png" alt="Meliconi screenshot" />
-								</a>
-								<div class="caption">
-							        <h3>Meliconi</h3>
-							        <p>
-							        	Frontend and Backend Developing.<br/>
-							        	<a href="http://www.meliconi.com" target="blank">www.meliconi.com</a>
-							        </p>							       
-							    </div>
-							</div>
-							<div class="col-sm-12 col-md-12 col-lg-6 thumb-item">
-								<a href="http://www.emilceramica.com"  title="Emilceramica Homepage" class="thumbnail picture">
-								    <img src="includes/img/screens/emilceramica.png" alt="Emilceramica screenshot" />
-								</a>
-								<div class="caption">
-							        <h3>Emilceramica</h3>
-							        <p>
-							        	Frontend and Backend Developing.<br/>
-							        	<a href="http://www.emilceramica.com" target="blank">www.emilceramica.com</a>
-							        </p>							       
-							    </div>
-							</div>
+						<div class="portfolio section">
+							<a name="portfolio"></a>
+							<h2 id="portfolio">Portfolio</h2>
 							<div class="clearfix"></div>
-							<div class="col-sm-12 col-md-12 col-lg-6 thumb-item">
-								<a href="http://www.konkuri.com"  title="Konkuri Homepage" class="thumbnail picture">
-								    <img src="includes/img/screens/konkuri.png" alt="Konkuri screenshot" />
-								</a>
-								<div class="caption">
-							        <h3>Konkuri</h3>
-							        <p>
-							        	Tournament management platform.
-							        	Main Developer for 5 years.<br/>
-							        	<a href="http://www.konkuri.com" target="blank">www.konkuri.com</a>
-							        </p>							       
-							    </div>
+							<div class="row">
+								<div class="col-sm-12 col-md-12 col-lg-6 thumb-item box">
+									<h4>Meliconi</h4>
+									<a href="http://www.meliconi.com"  title="Meliconi Homepage" class="picture">
+									    <img src="includes/img/screens/meliconi.png" alt="Meliconi screenshot" />
+									</a>
+									<div class="caption">
+								        <p>
+								        	Frontend and Backend developing.<br/>
+								        	<a href="http://www.meliconi.com" target="blank">www.meliconi.com</a>
+								        </p>							       
+								    </div>
+								</div>
+								<div class="col-sm-12 col-md-12 col-lg-6 thumb-item box">
+									<h4>Emilceramica</h4>
+									<a href="http://www.emilceramica.com"  title="Emilceramica Homepage" class=" picture">
+									    <img src="includes/img/screens/emilceramica.png" alt="Emilceramica screenshot" />
+									</a>
+									<div class="caption">
+								        <p>
+								        	Frontend and Backend developing.<br/>
+								        	<a href="http://www.emilceramica.com" target="blank">www.emilceramica.com</a>
+								        </p>							       
+								    </div>
+								</div>
+								<div class="clearfix"></div>
+								<div class="col-sm-12 col-md-12 col-lg-6 thumb-item box">
+									<h4>Konkuri</h4>
+									<a href="http://www.konkuri.com"  title="Konkuri Homepage" class=" picture">
+									    <img src="includes/img/screens/konkuri.png" alt="Konkuri screenshot" />
+									</a>
+									<div class="caption">
+								        <p>
+								        	Tournament management platform.
+								        	Main Developer for 5 years.<br/>
+								        	<a href="http://www.konkuri.com" target="blank">www.konkuri.com</a>
+								        </p>							       
+								    </div>
+								</div>
+								<div class="col-sm-12 col-md-12 col-lg-6 thumb-item box">
+									<h4>Appuntamento al buio</h4>
+									<a href="http://appuntamentoalbuio.lattemiele.com/"  title="Appuntamento al Buio Homepage" class="picture">
+									    <img src="includes/img/screens/appalbuio.png" alt="Appuntamento al Buio screenshot" />
+									</a>
+									<div class="caption">
+								        <p>
+								        	Social network & Dating.
+								        	Frontend and Backend developing.<br/>
+								        	<a href="http://appuntamentoalbuio.lattemiele.com/" target="blank">http://appuntamentoalbuio.lattemiele.com</a>
+								        </p>							       
+								    </div>
+								</div>
+								<div class="clearfix"></div>
 							</div>
-							<div class="col-sm-12 col-md-12 col-lg-6 thumb-item">
-								<a href="http://appuntamentoalbuio.lattemiele.com/"  title="Appuntamento al Buio Homepage" class="thumbnail picture">
-								    <img src="includes/img/screens/appalbuio.png" alt="Appuntamento al Buio screenshot" />
-								</a>
-								<div class="caption">
-							        <h3>Appuntamento al buio</h3>
-							        <p>
-							        	Social network & Dating.
-							        	Frontend and Backend developing.<br/>
-							        	<a href="http://appuntamentoalbuio.lattemiele.com/" target="blank">http://appuntamentoalbuio.lattemiele.com</a>
-							        </p>							       
-							    </div>
-							</div>
+							<p>
+								I've worked for Koinema, an italian smart web agency, from 2007 to Oct 2013. Please refer to <a href="http://www.koinema.com/it/siti_web">Koinema's portfolio</a> for more works.
+							</p>
+						</div>
+						<div class="skillset section">
+							<a name="skillset"></a>
+							<h2 id="skillset">Skillset</h2>
 							<div class="clearfix"></div>
-							<div class="col-sm-12 col-md-12 col-lg-6 thumb-item">
-								<a href="http://www.musepeak.com"  title="Musepeak Homepage" class="thumbnail picture">
-								    <img src="includes/img/screens/musepeak.png" alt="Musepeak screenshot" />
-								</a>
-								<div class="caption">
-							        <h3>Musepeak</h3>
-							        <p>
-							        	Web application to better manage the creative process between internal team and client.<br/>
-							        	<a href="http://www.musepeak.com" target="blank">www.musepeak.com</a>
-							        </p>							       
-							    </div>
-							</div>
-							<div class="col-sm-12 col-md-12 col-lg-6 thumb-item">
-							    <a href="http://www.lovinitaly.com"  title="lovinitaly Homepage" class="thumbnail picture">
-							      <img src="includes/img/screens/lovinitaly.png" alt="lovinitaly screenshot"/>
-							    </a>
-							    <div class="caption">
-							        <h3>lovinitaly</h3>
-							        <p>
-							        	Sensorial guide to the best of Italy.<br/>
-							        	<a href="http://www.lovinitaly.com" target="blank">www.lovinitaly.com</a>
-							        </p>							      
-							    </div>								
+							<div class="row">
+								<div class="cold-md-4 col-sm-6">
+									<ul class="">
+										Design & Prototyping
+										<li>Adobe Fireworks</li>
+										<li>Balsamiq Mockups</li>
+										<li>Adobe Photoshop</li>
+										<li>Paper prototyping :)</li>
+									</ul>
+								</div>
+								<div class="cold-md-4 col-sm-6">
+									<ul>
+										Other knowledge
+										<li>Responsive Websites</li>
+										<li>Backbone.js</li>
+										<li>PHP / Java</li>
+									</ul>
+								</div>
+								<div class="clearfix"></div>
+								<div class="cold-md-4 col-sm-6">
+									<ul>
+										Web Development
+										<li>HTML(5) / CSS</li>
+										<li>Javascript / jQuery</li>
+										<li>Python / Django</li>
+										<li>Databases / Mysql / Postgres</li>
+										<li>Mercurial / Git</li>
+									</ul>
+								</div>
 							</div>
 						</div>
-						<p>
-							I've worked for Koinema, an italian smart web agency, from 2007 to Oct 2013. Please refer to <a href="http://www.koinema.com/it/siti_web">Koinema's portfolio</a> for more works.
-						</p>
+						<div class="cv section">
+							<a name="cv"></a>
+							<h2 id="cv">CV and Contacts</h2>
+							<div class="clearfix"></div>
+							<div class="row">
+								<div class="col-md-6 col-sm-6">
+									<h4>Contacts</h4>
+									<ul class="list-unstyled">
+										<li>
+											<img src="includes/img/icons/twitter.png" width="20" /> 
+											<a href="http://twitter.com/#!/mnstefan" target="_blank" title="Stefan Manastirliu on Twitter">@mnstefan</a>
+										</li>
+										<li>
+											<img src="includes/img/icons/gmail.png" width="20" /> 
+											<a href="mailto:mnstefan@gmail.com" target="_blank" title="Send me an email"><span class="icon gmail"></span> mnstefan [at] gmail [dot] com</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-6 col-sm-6">
+									<h4>Curriculum Vitae</h4>
+									<p>
+										<a class="btn btn-primary" href="https://docs.google.com/document/d/1t3whpe6kfITrVn4nyQ5bX7NfkXAv5AjKPQVMFEckHEY/edit?usp=sharing" title="Stefan Manastirliu CV" target="_blank"><img src="includes/img/icons/drive.png" width="20"/> Stefan Manastirliu CV</a>
+									</p>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

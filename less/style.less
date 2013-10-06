@@ -1,22 +1,124 @@
 @import "bootstrap-3.0.0/less/bootstrap.less";
 
 body{
-  background: url("../includes/img/patterns/brushed.png");
 
+  a:hover, a:active{
+    text-decoration: none;
+  }
+  h1, h2{
+    font-family: @font-family-sans-serif;
+  }
   .section{
     margin-bottom: 4em;
 
     .thumb-item{
       margin-bottom: 2em;
-      height: 400px;
+    }
+    .box{
+      text-align:center;
+      img{
+        display:block;
+        box-shadow: 0 0 2px #ccc;
+      }
+      a{
+        display:block;
+      }
+    }
+
+    h2{
+      margin: 0px 0 40px 0;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 1em;
+      padding: 10px 2px;
+      border-bottom: 4px solid @gray-dark;
+      float:left;
+      font-family: @font-family-sans-serif;
+    }
+    h3{
+       margin: 10px 0 20px 0;
+    }
+    .caption{
+      p{
+        font-size: @font-size-small;
+      }
     }
   }
+
+  .affix{
+    position: static;
+  }
+  @media (min-width: @screen-md) and (max-width: @screen-md-max) { 
+    .affix{
+      position: fixed;
+      top:20px;
+      width: 293px;
+    }
+  }
+  @media (min-width: @screen-lg) {
+    .affix{
+      position: fixed;
+      top:20px;
+      width: 263px;
+    }
+  }
+
+  .skillset{
+    ul{
+      color: #DD7E6B;
+      li{
+        color: @gray-dark;
+      }
+    }
+  }
+
+  .sidebar{
+    border-right: 1px solid @gray-light;
+    text-align:right;
+    .opacity(0.3);
+    .transition(all 0.3s);
+    font-family: @font-family-sans-serif;
+
+    &:hover{
+      .opacity(0.7);
+    }
+    .nav{
+      li{
+
+        &.active{
+          a{
+            background: none;
+            color: @link-hover-color;
+            border-right: 1px solid @link-hover-color;
+          }
+        }
+        a{
+         
+          font-size: @font-size-small;
+          padding-top: 6px;
+          padding-bottom: 7px;
+          color: @gray;
+          border-right: 1px solid transparent;
+
+          &:hover{
+            background: none;
+            color: @link-hover-color;
+            border-right: 1px solid @link-hover-color;
+          }
+        }
+      }
+    }
+  }
+
 }
 
 header{
   margin-bottom: 2em;
 }
 
-.picture img{
-  max-width: 100%;
+.picture {
+  margin-bottom: 1em;
+  img{
+    max-width: 100%;
+  }
 }
